@@ -11,20 +11,27 @@
 
         </section>
         <!-- seconda sezione contenente un paragrafo con un titolo a cenmtro pagina e un background colorato -->
-        <section>
-            <!-- <h4>titolo</h4> -->
-            <!-- <p>paragrafo</p> -->
+        <section class="upper_section">
+            <div class="container_sm">
+                <h5 class="upr-title">AVADA FORUM IS THE PLACE TO BE</h5>
+                <p class="upr-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque necessitatibus
+                    mollitia ad nihil a
+                    quaerat sed, laborum deleniti provident nobis nesciunt. Quaerat labore eius asperiores magnam quasi
+                    nostrum id mollitia.</p>
+            </div>
         </section>
         <!-- sezione principale contenente una serie di card con diverse strutture  -->
-        <section>
-            <div>
-                <!-- <p>piccolo titolo</p> -->
-                <!-- <h3>titolo sezione</h3> -->
+        <section class="main_section">
+            <div class="container">
+                <h5 class="upr-title">PHASELLUS EGET METUS</h5>
+                <h1>All the latest news</h1>
+                <hr class="red_bar">
+
             </div>
             <!-- div contenente 3 card piccole -->
-            <div class="container">
+            <div>
 
-                <!-- 3 card allineate con stessa dimensione e un paragrafo sotto -->
+
             </div>
             <div>
                 <!-- card piu grande larga quanto tutto il conteiner e con background un immagine, con all'interno un titolo , un testo e un button -->
@@ -83,6 +90,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// HERO SECTION //
 .hero_section {
     background-image: url(/public/home_slider_bg.jpg);
     height: 600px;
@@ -103,5 +111,49 @@ export default {
 .paragraph {
     color: white;
     padding-bottom: 30px;
+}
+
+// UPPER SECTION //
+
+.upper_section {
+    background-color: rgb(242, 242, 242);
+    height: 200px;
+}
+
+.container_sm {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.upr-title {
+    word-spacing: 8px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.upr-paragraph {
+    text-align: center;
+    padding: 30px;
+    word-spacing: 15px;
+}
+
+// MAIN SECTION //
+
+.main_section {
+    display: flex;
+    justify-content: center;
+
+}
+
+.red_bar {
+    width: 80px;
+    border-color: rgb(255, 141, 97);
+    margin: 0 auto;
+    margin-top: 30;
+
 }
 </style>

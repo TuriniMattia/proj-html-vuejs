@@ -2,10 +2,12 @@
     <!-- main della pagina -->
     <main>
         <!-- prima sezione con background un immagine, un h1, un h4 e un button -->
-        <section>
-            <!-- <h1></h1> -->
-            <!-- <h4></h4> -->
-            <!-- button -->
+        <section class="hero_section">
+            <div class="container hro">
+                <h1 class="big_title">Tech Forum!</h1>
+                <p class="paragraph">Discuss all the latest tecnology news and trends</p>
+                <button class="button blue">GET AVADA NOW! ></button>
+            </div>
 
         </section>
         <!-- seconda sezione contenente un paragrafo con un titolo a cenmtro pagina e un background colorato -->
@@ -80,4 +82,26 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.hero_section {
+    background-image: url(/public/home_slider_bg.jpg);
+    height: 600px;
+}
+
+.hro {
+    padding: 150px 0;
+}
+
+
+
+.big_title {
+    font-size: 100px;
+    color: white;
+
+}
+
+.paragraph {
+    color: white;
+    padding-bottom: 30px;
+}
+</style>

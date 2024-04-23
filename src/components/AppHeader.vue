@@ -2,12 +2,12 @@
     <!-- header -->
     <header class="header ">
         <!-- div contentente il logo  -->
-        <div class="container d_flex">
+        <div class="container d_flex hdr">
             <div>
                 <img class="logo" src="/public/logo.png" alt="">
             </div>
             <!-- lista contenente 6 list-item  cliccabili e un bottone con un icon lente vicino   -->
-            <ul class="d_flex_menu  menu_list">
+            <ul class="d_flex menu  menu_list">
                 <li><a href="">Home</a></li>
                 <li><a href="">Apple</a></li>
                 <li><a href="">Microsoft</a></li>
@@ -39,8 +39,8 @@ export default {
     color: white;
 }
 
-.d_flex {
-    display: flex;
+.d_flex.hdr {
+
     justify-content: space-between;
 }
 
@@ -53,8 +53,8 @@ export default {
     flex-grow: 1;
 }
 
-.d_flex_menu {
-    display: flex;
+.d_flex.menu {
+
     justify-content: flex-end;
     gap: 40px;
     align-items: center;

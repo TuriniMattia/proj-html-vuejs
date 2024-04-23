@@ -4,11 +4,16 @@
 	
 }
 
+.d_flex{
+    display: flex;
+}
+
 .button{
     border: none;
     color:white;
-    padding: 8px;
+    padding:12px;
     cursor: pointer;
+    font-weight: bold;
     
 }
 

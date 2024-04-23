@@ -20,7 +20,8 @@
                 <!-- <h3>titolo sezione</h3> -->
             </div>
             <!-- div contenente 3 card piccole -->
-            <div>
+            <div class="container">
+
                 <!-- 3 card allineate con stessa dimensione e un paragrafo sotto -->
             </div>
             <div>

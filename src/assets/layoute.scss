@@ -1,0 +1,21 @@
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	
+}
+
+.button{
+    border: none;
+    color:white;
+    padding: 8px;
+    cursor: pointer;
+    
+}
+
+.button.black {
+    background-color: black;
+}
+
+.button.blue{
+    background-color: rgb(40, 175, 195);
+}

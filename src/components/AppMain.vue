@@ -125,16 +125,15 @@
                 <button class="button blue">SIGN UP ></button>
 
             </div>
-            <!-- <h1></h1> -->
-            <!-- <p></p> -->
-            <!-- <button></button> -->
+
         </section>
         <!-- sezione per iscriversi alla news letter con un input e un button -->
-        <section>
-            <!-- <input type="text"> -->
-            <!-- <button>
-                cerca
-            </button> -->
+        <section class="news_letter_section ">
+            <div class="news_letter_body container">
+                <input class="email" type="text" placeholder="Insert your email*">
+                <button class="button black"> SEND</button>
+            </div>
+
         </section>
 
     </main>
@@ -325,5 +324,25 @@ export default {
     color: white;
     line-height: 250%;
     text-align: center;
+}
+
+// NEWSLETTER SECTION //
+.news_letter_section {
+    background-color: rgb(242, 242, 242);
+    padding: 100px;
+}
+
+.news_letter_body {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.email {
+    width: 50%;
+}
+
+.button {
+    width: 20%;
 }
 </style>

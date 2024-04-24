@@ -21,30 +21,40 @@
             </div>
         </section>
         <!-- sezione principale contenente una serie di card con diverse strutture  -->
-        <section class="main_section">
+        <section>
             <div class="container">
-                <h5 class="upr-title">PHASELLUS EGET METUS</h5>
-                <h1>All the latest news</h1>
-                <hr class="red_bar">
+                <div class="main_section">
+                    <h5 class="upr-title">PHASELLUS EGET METUS</h5>
+                    <h1>All the latest news</h1>
+                    <hr class="red_bar">
+                </div>
 
-            </div>
-            <!-- div contenente 3 card piccole -->
-            <div>
+                <!-- div contenente 3 card piccole -->
+                <div class="card_container">
+                    <AppCard />
+                </div>
 
+                <div class="big_card_container">
+                    <AppBigCard />
+                </div>
 
-            </div>
-            <div>
-                <!-- card piu grande larga quanto tutto il conteiner e con background un immagine, con all'interno un titolo , un testo e un button -->
-            </div>
-            <!-- div contenente 3 card piccole -->
-            <div>
-                <!-- 3 card allineate con stessa dimensione e un paragrafo sotto -->
-            </div>
-            <div>
+                <div class="card_container">
+                    <AppCard />
+                </div>
                 <!-- div con all'interno una card piu grossa che occupa il 60% del container , con un paragrafo e un bottone -->
                 <!-- una card con all'interno 3 card piu piccole -->
+                <div class="d_flex">
+                    <div>
+                        ciao
+                    </div>
+                    <div>
+
+                    </div>
+
+                </div>
 
             </div>
+
 
 
         </section>
@@ -80,7 +90,13 @@
 </template>
 
 <script>
+import AppCard from './AppCard.vue';
+import AppBigCard from './AppBigCard.vue';
 export default {
+    components: {
+        AppCard,
+        AppBigCard,
+    },
     data() {
 
 
@@ -136,8 +152,7 @@ export default {
 }
 
 .upr-paragraph {
-    text-align: center;
-    padding: 30px;
+
     word-spacing: 15px;
 }
 
@@ -145,15 +160,36 @@ export default {
 
 .main_section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .red_bar {
     width: 80px;
     border-color: rgb(255, 141, 97);
-    margin: 0 auto;
-    margin-top: 30;
+    margin-top: 50px;
 
 }
-</style>
+
+// CARD CONTAINER //
+
+.card_container {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+
+}
+
+// BIG CONTAINER //
+.big_card_container {
+    margin: 50px 0;
+    background-image: url(/public/featured_article_1_bg.jpg);
+    background-size: 100%;
+    image-rendering: auto;
+    height: 500px;
+    width: 100%;
+}
+
+
+//MAIN_SECTION FOOTER //</style>

@@ -3,6 +3,7 @@
     <AppHeader />
     <AppMain />
     <AppCard />
+    <AppBigCard />
     <AppFooter />
 
   </div>
@@ -13,13 +14,13 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppCard from './components/AppCard.vue';
+import AppBigCard from './components/AppBigCard.vue';
 
 export default {
   components: {
     AppHeader,
     AppMain,
     AppFooter,
-    AppCard,
   },
   data() {
 

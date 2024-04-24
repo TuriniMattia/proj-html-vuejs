@@ -104,8 +104,8 @@
                 <h1>Forum Sections</h1>
                 <hr class="red_bar">
             </div>
-            <div class="forum_card_container">
-
+            <div class="forum_card_container container">
+                <AppForumCard />
             </div>
         </section>
         <!-- sezione con sfondo nero e un'ancora  -->
@@ -132,10 +132,12 @@
 <script>
 import AppCard from './AppCard.vue';
 import AppBigCard from './AppBigCard.vue';
+import AppForumCard from './AppForumCard.vue';
 export default {
     components: {
         AppCard,
         AppBigCard,
+        AppForumCard,
     },
     data() {
 
@@ -262,6 +264,7 @@ export default {
 
 .card {
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .card_text_container {
@@ -294,6 +297,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 50px 0;
 
 }
 </style>

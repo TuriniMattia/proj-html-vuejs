@@ -40,7 +40,7 @@ export default {
 .card {
 
     max-width: 300px;
-    margin: none;
+    cursor: pointer;
     text-align: left;
 }
 

@@ -98,14 +98,19 @@
             <h4><a href="">READ OUR BLOG &RightArrow;</a></h4>
         </section>
         <!-- forum section contenente una serie di card tutte uguali che occupano tutto il container e con icone all'interno -->
-        <section>
-            <div>
-                <!-- card -->
+        <section class="forum_section">
+            <div class="main_section">
+                <h5 class="upr-title">PHASELLUS EGET METUS</h5>
+                <h1>Forum Sections</h1>
+                <hr class="red_bar">
+            </div>
+            <div class="forum_card_container">
+
             </div>
         </section>
         <!-- sezione con sfondo nero e un'ancora  -->
-        <section>
-            <!-- <a href=""></a> -->
+        <section class="black_section">
+            <h4><a href="">GET TO OUR FORUM &RightArrow;</a></h4>
         </section>
         <!-- sezione contenente un titolo centrale, un paragrafo e un button -->
         <section>
@@ -278,5 +283,17 @@ export default {
     background-color: black;
     text-align: center;
     padding: 30px;
+}
+
+// FORUM SECTION //
+.forum_section {
+    background-color: rgb(242, 242, 242);
+}
+
+.forum_card_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
 }
 </style>

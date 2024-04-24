@@ -113,7 +113,18 @@
             <h4><a href="">GET TO OUR FORUM &RightArrow;</a></h4>
         </section>
         <!-- sezione contenente un titolo centrale, un paragrafo e un button -->
-        <section>
+        <section class="community_section">
+            <div class="container_sm com_sec_body">
+                <h1>Hey! Join to our <br>
+                    Community
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro aut itaque saepe, doloremque
+                    quidem facere sint aliquam! Nemo, ad recusandae odio quidem omnis enim debitis exercitationem ullam
+                    architecto saepe.
+                </p>
+                <button class="button blue">SIGN UP ></button>
+
+            </div>
             <!-- <h1></h1> -->
             <!-- <p></p> -->
             <!-- <button></button> -->
@@ -299,5 +310,20 @@ export default {
     flex-direction: row;
     padding: 50px 0;
 
+}
+
+//COMMUNITY SECTION //
+
+.community_section {
+    background-image: url(/public/join_now_cta_bg.jpg);
+    background-size: 100%;
+    height: 500px;
+}
+
+.com_sec_body {
+    padding: 100px;
+    color: white;
+    line-height: 250%;
+    text-align: center;
 }
 </style>
